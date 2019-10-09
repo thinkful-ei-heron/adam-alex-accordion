@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './Accordion.css';
 
 class Accordion extends React.Component {
@@ -18,11 +18,11 @@ class Accordion extends React.Component {
     clearInterval(this.interval)
   }
 
-  handleButtonClick = (event) => {
+  handleButtonClick = (index) => {
     this.setState({
-      openItem: parseInt(event.target.id)
+      openItem: index
     })
-    if(this.state.openItem === parseInt(event.target.id))
+    if(this.state.openItem === index)
     {
       this.setState({
         openItem: null
@@ -36,7 +36,7 @@ class Accordion extends React.Component {
         {(this.props.sections !== []) ?
         (this.props.sections.map((e, index) => 
         <li className="section-component" key={ index } >
-          <button className="section-button" id={ index } onClick={this.handleButtonClick}>{e.title}</button>
+          <button className="section-button" id={ index } onClick={() => this.handleButtonClick(index)}>{e.title}</button>
           {this.state.openItem === index ? <p className="section-details">{this.props.sections[index].content}</p> : <l1></l1>}
         </li>)) : ''
         }

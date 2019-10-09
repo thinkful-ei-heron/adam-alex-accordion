@@ -1,0 +1,145 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Accordion Component only opens one section at a time 1`] = `
+<ul
+  className="accordion"
+>
+  <li
+    className="section-component"
+    key="0"
+  >
+    <button
+      className="section-button"
+      id={0}
+      onClick={[Function]}
+    >
+      Section 1
+    </button>
+    <l1 />
+  </li>
+  <li
+    className="section-component"
+    key="1"
+  >
+    <button
+      className="section-button"
+      id={1}
+      onClick={[Function]}
+    >
+      Section 2
+    </button>
+    <l1 />
+  </li>
+  <li
+    className="section-component"
+    key="2"
+  >
+    <button
+      className="section-button"
+      id={2}
+      onClick={[Function]}
+    >
+      Section 3
+    </button>
+    <l1 />
+  </li>
+</ul>
+`;
+
+exports[`Accordion Component opens any clicked section 1`] = `
+<ul
+  className="accordion"
+>
+  <li
+    className="section-component"
+    key="0"
+  >
+    <button
+      className="section-button"
+      id={0}
+      onClick={[Function]}
+    >
+      Section 1
+    </button>
+    <l1 />
+  </li>
+  <li
+    className="section-component"
+    key="1"
+  >
+    <button
+      className="section-button"
+      id={1}
+      onClick={[Function]}
+    >
+      Section 2
+    </button>
+    <l1 />
+  </li>
+  <li
+    className="section-component"
+    key="2"
+  >
+    <button
+      className="section-button"
+      id={2}
+      onClick={[Function]}
+    >
+      Section 3
+    </button>
+    <l1 />
+  </li>
+</ul>
+`;
+
+exports[`Accordion Component renders empty given no Accordion without errors 1`] = `
+<ul
+  className="accordion"
+/>
+`;
+
+exports[`Accordion Component renders the no sections by default 1`] = `
+<ul
+  className="accordion"
+>
+  <li
+    className="section-component"
+    key="0"
+  >
+    <button
+      className="section-button"
+      id={0}
+      onClick={[Function]}
+    >
+      Section 1
+    </button>
+    <l1 />
+  </li>
+  <li
+    className="section-component"
+    key="1"
+  >
+    <button
+      className="section-button"
+      id={1}
+      onClick={[Function]}
+    >
+      Section 2
+    </button>
+    <l1 />
+  </li>
+  <li
+    className="section-component"
+    key="2"
+  >
+    <button
+      className="section-button"
+      id={2}
+      onClick={[Function]}
+    >
+      Section 3
+    </button>
+    <l1 />
+  </li>
+</ul>
+`;
